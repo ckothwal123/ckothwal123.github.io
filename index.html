@@ -2,32 +2,127 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Adding bootstrap elements-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Chethan Kothwal</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<!-- Add header here -->
 
 <body>
-    <div class="box">
-        <img src="profile.JPG" alt="Profile picture" class="box-img">
-        <h2>Hello, I'm Chethan.</h2>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Chethan Kothwal</a>
+            </li>
+        </ul>
+            <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="./Resume.pdf">Resume<span class="sr-only">(current)</span></a>
+            </li>
+            </ul>
+        </div>
+    </nav>
 
-        <h5>Software Engineer | Backend Developer</h5>
+    <!-- <div id="head-content" class="head-content text-center"> -->
+    <div class="container text-center img-fluid w-100" style="padding: 5%;padding-top: 10%; margin: none;">
+        
+        <img src="profile.JPG" alt="Profile picture" class="box-img"><br><br>
+        <h2 class="text-center">Hello, I'm Chethan.</h2>
 
-        <p title="About Me">
+        <p class="h5 text-center">Software Engineer | Backend Developer</p>
+
+        <p class="text-center" title="About Me">
             I recently completed my Masters degree in computer science and graduated from Illinois tech. 
             I am Backend web developer. I like to design, build and sometimes repair applications. I have 
             experience in building backend for web applications using Python Django framework and MySQL database. 
             I am interested to work on new projects using top-notch technologies and learn good practices!
-        </p>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/ckothwal/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-            <li><a href="https://github.com/ckothwal123"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-            <li><a href="mailto:ckothwal@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-        </ul>
+        </p> 
     </div>
+        
+    
+    <!-- </div> -->
+
+    <!--Content for cards for project-->
+    <div class="w-100 p-3 text-center" style="background-color:gainsboro;">
+        <h2>Projects</h2>
+    </div><br><br>
+
+
+    <div class="container">
+        <!-- First Card -->
+        <div class="row">
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+
+                    <div class="card-body">
+                        <h4 class="card-title ">Comics RESTful API</h4>
+                        <p class="card-text">Developed an application in Django that scrapes different websites for heart and brain, Garfield and Calvin Hobbs comics
+                            using beautiful soup library through celery background tasks and store them in a MySQL database.
+                            The application schedules Celery background tasks through RabbitMQ to upload the images to an AWS S3 bucket.
+                            The application is built using Django REST Framework (DRF) to provide RESTful API’s to the end user.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/vismaya-kalyan/Spring-Hibernate"><img
+                                src="./images/GitHub-Mark-32px.png"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Second card -->
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">Scripter</h4>
+                        <p class="card-text">An application to help scriptwriters to write script involving multiple roles and hear playback of the script written in live.
+                            This application was built as a hackathon project for VandyHacks 2019 at Vanderbuilt University.
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/vismaya-kalyan/Vending-Machine"><img
+                                src="./images/GitHub-Mark-32px.png"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Third card -->
+            <div class="col-md-4 mb-5">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h4 class="card-title">TicketHub</h4>
+                        <p class="card-text">Developed a web application using Java servlets that allows users to look upon different sports events across the country and
+                            book tickets for the events. Batch processed the data for the events using python requests to StubHub API and stored in MySQL database.
+                            Reviews for the user experience for the website is stored in MongoDB.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://github.com/vismaya-kalyan/Vending-Machine"><img
+                                src="./images/GitHub-Mark-32px.png"></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+    <!--Add one more division to display projects information-->
+
+
+    <!--Add footer here-->
+<!-- Footer -->
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="social text-center">
+                <a href="mailto:ckothwal@gmail.com" target="_blank"><i class="fa fa-envelope-open"></i></a>
+                <a href="https://github.com/ckothwal123?tab=repositories" target="_blank"><i
+                        class="fa fa-github"></i></a>
+                <a href="https://linkedin.com/in/ckothwal/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Script sources for Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
-<!--Add footer here-->
+
+
 </html>
